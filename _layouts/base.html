@@ -7,6 +7,8 @@ layout: none
   <head>
     {%- include analytics.html -%}
     {%- include head.html -%}
+    <link rel="stylesheet" href="{{ '/assets/css/all.css' | relative_url }}">
+    <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
     <script>
       {%- include scripts/utils/utils.js -%}
       {%- include scripts/lib/throttle.js -%}
@@ -18,8 +20,6 @@ layout: none
     <div class="root" data-is-touch="false">
       {{ content }}
     </div>
-    <script>
-      {%- include scripts/common.js -%}
-    </script>
+    <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
   </body>
 </html>
