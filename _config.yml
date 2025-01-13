@@ -60,7 +60,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: "reindustrialisation-logistique/reindustrialisation-logistique" # Nom de ton dépôt GitHub
+repository: "reindustrialisation-logistique" # Nom de ton dépôt GitHub
 repository_tree: "main"
 
 
