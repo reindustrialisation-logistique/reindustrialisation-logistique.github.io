@@ -17,7 +17,7 @@
 }
 
 .extensions--video {
-  padding-top: percentage(calc(315 / 560));
+  padding-top: (315 / 560) * 100%;
 }
 
 .extensions--slide {
