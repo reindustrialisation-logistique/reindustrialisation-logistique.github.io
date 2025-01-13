@@ -18,8 +18,10 @@
 ##############################
 text_skin: forest # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: tomorrow # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : ""# the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : ""# does not include hostname
+url: "https://reindustrialisation-logistique.github.io"
+baseurl: ""
+github:
+  is_project_page: false
 title   : Projet Réindustrialisation, transitions et logistiques dans la Vallée de la Seine
 description: > # this means to ignore newlines until "Language & timezone"
   Carnets de recherche du projet
@@ -52,14 +54,14 @@ author:
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : "reindustrialisation-logistique"# "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
-repository_tree: master
+repository: "reindustrialisation-logistique/reindustrialisation-logistique" # Nom de ton dépôt GitHub
+repository_tree: "main"
 
 
 ## => Paths
