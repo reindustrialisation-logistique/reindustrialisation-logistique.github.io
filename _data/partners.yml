@@ -1,0 +1,15 @@
+- name: "Logistique Seine Normandie"
+  logo: "/assets/images/partners/lsn.webp"
+  role: "Contribution au benchmark international, partenariat, entretiens, expertise sur les sujets fonciers"
+  website: "https://www.logistique-seine-normandie.com/"
+
+- name: "Pôle NextMove"
+  logo: "/assets/images/partners/next-move.webp"
+  role: "Echanges d'informations, accès aux membres du réseau"
+  website: "https://nextmove.fr/"
+
+- name: "Cosmetic Valley"
+  logo: "/assets/images/partners/cosmetic-valley.webp"
+  role: "Partenariat autour de l’étude des transformations de la filière cosmétique"
+  website: "https://www.cosmetic-valley.com/fr"
+

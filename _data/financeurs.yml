@@ -1,0 +1,23 @@
+- name: "Délégation Interministériel au Développement de la Vallée de la Seine"
+  logo: "/assets/images/financeurs/vds.png"
+  website: "https://www.vdseine.fr/"
+
+
+- name: "Région Normandie"
+  logo: "/assets/images/financeurs/normandie.jpg"
+  website: "https://www.normandie.fr/"
+
+
+- name: "Région Ile-de-France"
+  logo: "/assets/images/financeurs/ile-de-france.jpg"
+  website: "https://www.iledefrance.fr/"
+  
+  
+- name: "FNADT"
+  logo: "/assets/images/financeurs/etat.jpg"
+  website: "https://www.prefectures-regions.gouv.fr/normandie/Grands-dossiers/Investissements-publics/FNADT/Le-fonds-national-d-amenagement-et-de-developpement-du-territoire"
+
+
+- name: "Université Le Havre Normandie"
+  logo: "/assets/images/financeurs/univ-lehavre.jpg"
+  website: "https://www.univ-lehavre.fr/"

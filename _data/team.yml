@@ -1,0 +1,79 @@
+- name: "Marie-Laure Baron"
+  role: "Responsable du projet, recherches sur l'évolution des besoins logistiques, acceptabilité, gouvernance locale."
+  photo: "/assets/images/team/marie-laure-baron.jpg"
+  bio: "Professeure des Universités en sciences de gestion, NIMEC, Université Le Havre Normandie"
+  social:
+    LinkedIn: "https://fr.linkedin.com/in/marie-laure-baron-39644a2b"
+    Site: "https://www.nimec.fr/membres/name/marie-laure-baron/"
+
+- name: "Nathan Gouin"
+  role: "Post-doctorant du projet, animation du projet et recherche sur l'acceptabilité des projets industriels et logistiques, analyse des recompositions de la gouvernance locale, constitution de base de données, benchmarks, état de l'art, entretiens."
+  photo: "/assets/images/team/nathan-gouin.jpg"
+  bio: "Docteur en géographie politique et aménagement, UMR IDEES, Université Le Havre Normandie"
+  social:
+    LinkedIn: "https://fr.linkedin.com/in/nathan-gouin"
+    Site: "https://umr-idees.fr/annuaire/nathan-gouin"
+
+- name: "Arnaud Brennetot"
+  role: "Etudes sur l'évolution de l’industrie et de la gouvernance territoriale en lien avec la logistique."
+  photo: "/assets/images/team/arnaud-brennetot.jpg"
+  bio: "Professeur des Universités en géographie politique, UMR IDEES, Université Rouen Normandie"
+  social:
+    LinkedIn: "https://fr.linkedin.com/in/arnaud-brennetot-34805b256"
+    Site: "https://umr-idees.fr/annuaire/arnaud-brennetot"
+
+- name: "Valérie Bailly-Hascoët"
+  role: "Aspects réglementaires. Etude des politiques publiques européennes et françaises en matière de réindustrialisation et de transitions (énergétique, ZAN,…)."
+  photo: "/assets/images/team/vbailly.jpg"
+  bio: "Attachée de recherche, Institut en Droit International des Transports"
+  social:
+    LinkedIn: "https://www.linkedin.com/in/val%C3%A9rie-bailly-hasco%C3%ABt-b78aa3170/"
+    Site: "https://www.idit.asso.fr/equipe/index.php"
+
+- name: "Ludovic Couturier"
+  role: "Aspects réglementaires. Etude des politiques publiques européennes et françaises en matière de réindustrialisation et de transitions (énergétique, ZAN,…)."
+  photo: "/assets/images/team/lcouturier.jpg"
+  bio: "Directeur, Institut en Droit International des Transports"
+  social:
+    LinkedIn: "https://fr.linkedin.com/in/ludovic-couturier-a5809b67"
+    Site: "https://www.idit.asso.fr/equipe/index.php"
+
+- name: "Fabien Nadou"
+  role: "Etudes de cas sur l’évolution de l’industrie et de la gouvernance territoriale en lien avec la logistique."
+  photo: "/assets/images/team/fabien-nadou.jpg"
+  bio: "Professeur associé en développement territorial et d’économie régionale, EM Normandie. Metis Lab."
+  social:
+    LinkedIn: "https://fr.linkedin.com/in/fabien-nadou-8a94a810"
+    Site: "https://www.em-normandie.com/annuaire-des-professeurs/fabien-nadou"
+
+- name: "David Guerrero"
+  role: "Etude de la filière automobile (transformations, nouveaux matériaux, nouveaux flux). En collaboration avec Olivier Joly (MCF, ULHN) et Vincent Frigant (PU, Univ. Bordeaux)."
+  photo: "/assets/images/team/david-guerrero.jpeg"
+  bio: "Chargé de recherche, Université Gustave Eiffel, SPLOTT"
+  social:
+    LinkedIn: "https://www.linkedin.com/in/david-guerrero-gomez/"
+    Site: "https://pagespro.univ-gustave-eiffel.fr/david-guerrero?lang=fr&no_cache=1"
+
+- name: "Antoine Beyer"
+  role: "Morphologie et dynamique des réseaux de transport"
+  photo: "/assets/images/team/antoine-beyer.png"
+  bio: "Professeur des Universités, UMR MAtris, Cergy Paris Université. Chargé d'étude Fret et Logistique à Institut Paris Région"
+  social:
+    LinkedIn: "https://fr.linkedin.com/in/antoine-beyer-21275025"
+    Site: "https://www.cyu.fr/m-antoine-beyer"
+
+- name: "Roumaissa El Walhezi"
+  role: "Doctorante en sciences de gestion, sous la direction de Marie-Laure Baron et Arnaud Brennetot."
+  photo: "/assets/images/team/portrait.jpg"
+  bio: "Sujet à préciser"
+  social:
+    LinkedIn: "https://fr.linkedin.com/in/rouma%C3%AFssae-ouelhazi"
+    Site: ""
+
+- name: "Sonia Froufe"
+  role: "Etudes sur l'évolution des besoins logistiques/filières."
+  photo: "/assets/images/team/portrait.jpg"
+  bio: "Maître de conférences en sciences de gestion, ISEL, NIMEC"
+  social:
+    LinkedIn: ""
+    Site: "https://www.nimec.fr/membres/name/sonia-froufe/"

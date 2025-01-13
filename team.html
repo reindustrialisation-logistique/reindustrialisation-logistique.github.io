@@ -1,0 +1,48 @@
+---
+layout: page
+permalink: /team/
+---
+
+<div class="team-hero">
+  <h1>Les membres du projet</h1>
+  <p>Découvrez les membres qui travaillent sur le projet Réindustrialisation, transitions et logistique dans la Vallée de la Seine.</p>
+</div>
+
+<div class="team-container">
+  {% for member in site.data.team %}
+    <div class="team-card">
+      <img src="{{ member.photo }}" alt="Photo de {{ member.name }}" class="team-photo">
+      <h3>{{ member.name }}</h3>
+      <p><strong>Rôle :</strong> {{ member.role }}</p>
+      <p><strong>Bio :</strong> {{ member.bio }}</p>
+      {% if member.social %}
+        <div class="team-socials">
+          {% for platform in member.social %}
+            <a href="{{ platform[1] }}" target="_blank" class="social-link">
+              {{ platform[0] }}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<div class="partners-hero">
+  <h1>Partenaires du projet</h1>
+</div>
+
+<div class="partners-container">
+  {% for partner in site.data.partners %}
+    <div class="partner-card">
+      <img src="{{ partner.logo }}" alt="Logo de {{ partner.name }}" class="partner-logo">
+      <h4>{{ partner.name }}</h4>
+      <p>{{ partner.role }}</p>
+      {% if partner.website %}
+        <a href="{{ partner.website }}" target="_blank" class="partner-link">
+          Site
+        </a>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
