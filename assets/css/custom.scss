@@ -1,71 +1,82 @@
-/* Général */
+/* General Fixes for Consistency */
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Header */
+/* Header Styles */
 .header {
   text-align: center;
   padding: 1rem 0;
-  background-color: var(--header-bg, #f4f4f4);
+  background-color: var(--primary-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header_title {
-  text-align: center;
-  margin: 0 auto;
+.header_title h1 {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin: 0.5rem 0;
 }
 
-.header_title h1,
 .header_title h4 {
-  margin: 0.5rem auto;
-  max-width: 80%; /* Limiter la largeur pour éviter un débordement */
-  line-height: 1.4;
+  font-size: 1.2rem;
+  color: var(--secondary-dark);
+  margin: 0;
 }
 
 .navigation {
-  text-align: center;
   margin-top: 1rem;
 }
 
 .navigation ul {
   display: flex;
   justify-content: center;
+  gap: 1rem;
   padding: 0;
   list-style: none;
 }
 
-.navigation__item {
-  margin: 0 10px;
-}
-
 .navigation__item a {
-  color: var(--text-color, #333);
+  color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Footer */
+.navigation__item a:hover {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+/* Footer Styles */
 .footer {
-  text-align: center;
+  background-color: var(--secondary-light);
+  color: var(--secondary-dark);
   padding: 2rem 1rem;
-  background-color: var(--footer-bg, #f4f4f4);
-  border-top: 1px solid var(--border-color, #ddd);
+  text-align: center;
 }
 
-.site-info {
-  text-align: center;
-  font-size: 0.9rem;
+.footer__author-links a {
+  color: var(--primary);
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer__author-links a:hover {
+  color: var(--primary-dark);
 }
 
 .financeurs-footer {
-  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
 }
 
 .financeurs-footer h4 {
-  font-size: 1.2rem;
-  color: var(--primary-dark, #000);
+  font-size: 1.4rem;
+  color: var(--primary-dark);
   margin-bottom: 1rem;
 }
 
@@ -79,32 +90,19 @@ body {
 .financeur-item img {
   max-width: 100px;
   height: auto;
-  margin: 0 auto;
-}
-
-.financeur-item {
-  display: inline-block;
   transition: transform 0.3s ease;
 }
 
-.financeur-item:hover {
-  transform: scale(1.05);
+.financeur-item:hover img {
+  transform: scale(1.1);
 }
 
-/* Section Hero */
-.hero {
-  text-align: center;
-  padding: 2rem;
-  background-color: var(--body-bg, #fff);
-  margin-bottom: 2rem;
-}
-
-/* Team Section */
+/* Team Page Styles */
 .team-hero {
   text-align: center;
   padding: 2rem;
-  background-color: var(--primary-light, #e3f2fd);
-  color: var(--primary-dark, #0d47a1);
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
   margin-bottom: 2rem;
 }
 
@@ -112,17 +110,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
 .team-card {
-  background: var(--card-bg, #fff);
-  border-radius: 8px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   text-align: center;
-  width: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  transition: transform 0.3s;
+  max-width: 250px;
+  transition: transform 0.3s ease;
 }
 
 .team-card:hover {
@@ -130,35 +128,31 @@ body {
 }
 
 .team-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  margin-bottom: 10px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .team-card h3 {
   font-size: 1.2rem;
-  color: var(--primary-dark, #333);
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
 }
 
 .team-card p {
   font-size: 0.9rem;
-  color: var(--text-secondary, #666);
-  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
 }
 
-.team-socials {
-  margin-top: 1rem;
-}
-
-.team-socials .social-link {
-  margin: 0 0.5rem;
-  color: var(--primary, #0d47a1);
+.team-socials a {
+  color: var(--primary);
   font-size: 0.9rem;
-  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
 }
 
-.team-socials .social-link:hover {
-  text-decoration: underline;
+.team-socials a:hover {
+  color: var(--primary-dark);
 }
