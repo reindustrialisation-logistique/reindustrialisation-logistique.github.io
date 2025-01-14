@@ -1,74 +1,59 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Jekyll reconnaît le fichier comme un fichier SCSS à compiler
 ---
 
-@import
+@import "skins/{{ site.text_skin | default: site.data.variables.default.text_skin }}";
+@import "skins/forest";
+@import "skins/highlight/{{ site.highlight_theme | default: site.data.variables.default.highlight_theme }}";
 
-    "skins/{{ site.text_skin | default: site.data.variables.default.text_skin }}",
-    // "skins/chocolate",
-    // "skins/dark",
-    // "skins/default",
-    // "skins/forest",
-    // "skins/ocean",
-    // "skins/orange",
+@import "common/variables";
+@import "common/function";
+@import "common/classes";
+@import "common/reset";
+@import "common/print";
+@import "common/components/button";
+@import "common/components/image";
+@import "common/components/card";
+@import "common/components/gallery";
+@import "common/components/hero";
+@import "common/components/menu";
+@import "common/components/modal";
+@import "common/components/toc";
+@import "common/components/item";
+@import "common/components/swiper";
 
-    "skins/highlight/{{ site.highlight_theme | default: site.data.variables.default.highlight_theme }}",
-    // "skins/highlight/tomorrow",
-    // "skins/highlight/tomorrow-night",
-    // "skins/highlight/tomorrow-night-eighties",
-    // "skins/highlight/tomorrow-night-blue",
-    // "skins/highlight/tomorrow-night-bright",
+@import "animate/fade-in";
+@import "animate/fade-in-down";
+@import "animate/fade-in-up";
 
+@import "components/main";
+@import "components/header";
+@import "components/footer";
+@import "components/article-list";
+@import "components/article-info";
+@import "components/article-header";
+@import "components/article-content";
+@import "components/article-footer";
+@import "components/author-links";
+@import "components/author-profile";
+@import "components/tags";
+@import "components/search";
+@import "components/lightbox";
+@import "components/extensions";
 
-    "common/variables",
-    "common/function",
-    "common/classes",
-    "common/reset",
-    "common/print",
-    "common/components/button",
-    "common/components/image",
-    "common/components/card",
-    "common/components/gallery",
-    "common/components/hero",
-    "common/components/menu",
-    "common/components/modal",
-    "common/components/toc",
-    "common/components/item",
-    "common/components/swiper",
+@import "additional/alert";
+@import "additional/tag";
+@import "additional/photo-frame";
 
-    "animate/fade-in",
-    "animate/fade-in-down",
-    "animate/fade-in-up",
+@import "layout/base";
+@import "layout/page";
 
-    "components/main",
-    "components/header",
-    "components/footer",
-    "components/article-list",
-    "components/article-info",
-    "components/article-header",
-    "components/article-content",
-    "components/article-footer",
-    "components/author-links",
-    "components/author-profile",
-    "components/tags",
-    "components/search",
-    "components/lightbox",
-    "components/extensions",
+@import "layout/article";
+@import "layout/articles";
+@import "layout/archive";
+@import "layout/home";
+@import "layout/landing";
+@import "layout/404";
 
 
-    "additional/alert",
-    "additional/tag",
-    "additional/photo-frame",
-
-    "layout/base",
-    "layout/page",
-
-    "layout/article",
-    "layout/articles",
-    "layout/archive",
-    "layout/home",
-    "layout/landing",
-    "layout/404",
-
-    "custom"
-;
+@import "custom";
