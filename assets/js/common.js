@@ -1,5 +1,4 @@
 "use strict";
 
-import * as commonComponent from './src/commonComponent.component';
-
+import * as commonComponent from './src/commonComponent.js';
 export default commonComponent;
