@@ -32,47 +32,50 @@
   text-decoration: underline;
 }
 
-/* Default Navigation Menu */
+/* Default Navigation Menu (Desktop) */
 .navigation ul {
   display: flex;
-  flex-wrap: nowrap; /* Default behavior: no wrapping */
-  justify-content: center; /* Center items horizontally */
-  gap: 1rem; /* Spacing between items */
+  flex-wrap: nowrap; /* Prevent wrapping on desktop */
+  justify-content: center; /* Center the items */
+  gap: 1rem; /* Space between items */
   padding: 0;
   margin: 0;
   list-style: none; /* Remove bullets */
 }
 
-/* Default Navigation Items */
 .navigation__item {
-  flex: 1 1 auto; /* Allow items to grow and shrink */
+  flex: none; /* Prevent items from stretching */
   text-align: center; /* Center-align text */
 }
 
 .navigation__item a {
   display: block;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem; /* Spacing for readability */
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 /* Mobile Menu Adjustments */
 @media (max-width: 768px) {
   .navigation ul {
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: flex-start; /* Align items to the left */
-    gap: 0.5rem; /* Adjust spacing for mobile */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Keep items centered */
+    gap: 0.5rem; /* Reduce spacing for compact layout */
   }
 
   .navigation__item {
-    flex: 1 1 100%; /* Each item takes full width */
-    max-width: 100%; /* Prevent items from exceeding the container width */
+    flex: 1 1 auto; /* Adjust item width dynamically */
+    text-align: center; /* Center items on mobile */
   }
 
   .navigation__item a {
-    padding: 0.75rem; /* Increase touch target size */
-    font-size: 1rem; /* Adjust font size for readability */
+    padding: 0.75rem; /* Larger touch target for mobile */
+    font-size: 1rem; /* Maintain font size */
   }
 }
+
+
 
 
 /* Contenu principal */
