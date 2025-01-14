@@ -1,49 +1,90 @@
-<!-- Common Component Template (Intégré à vos styles) -->
-<div class="common-component">
-  <!-- Header Section -->
-  <header class="header">
-    <div class="header_title">
-      <h1>{{ component.title }}</h1>
-      <h4>{{ component.description }}</h4>
-    </div>
-  </header>
+"use strict";
 
-  <!-- Navigation Section -->
-  <nav class="navigation">
-    <ul>
-      {%- for item in component.navigation -%}
-        <li class="navigation__item">
-          <a href="{{ item.url | relative_url }}">{{ item.label }}</a>
-        </li>
-      {%- endfor -%}
-    </ul>
-  </nav>
+// Fonction pour générer un composant HTML dynamiquement
+function generateCommonComponent(component) {
+    // Vérification des données d'entrée
+    if (!component || typeof component !== "object") {
+        console.error("Erreur : données du composant invalides.");
+        return "";
+    }
 
-  <!-- Main Content Section -->
-  <main class="team-container">
-    {%- for contentBlock in component.contentBlocks -%}
-      <div class="team-card">
-        <img src="{{ contentBlock.image | relative_url }}" alt="{{ contentBlock.title }}" class="team-photo">
-        <h3>{{ contentBlock.title }}</h3>
-        <p>{{ contentBlock.description }}</p>
-      </div>
-    {%- endfor -%}
-  </main>
+    // Création du contenu HTML
+    const headerHTML = `
+        <header class="header">
+            <div class="header_title">
+                <h1>${component.title || "Titre non défini"}</h1>
+                <h4>${component.description || "Description non définie"}</h4>
+            </div>
+        </header>
+    `;
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="site-info">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-    </div>
-    <div class="financeurs-footer">
-      <h4>Financeurs</h4>
-      <div class="financeurs-list">
-        {%- for sponsor in component.sponsors -%}
-          <div class="financeur-item">
-            <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }}" class="financeur-logo">
-          </div>
-        {%- endfor -%}
-      </div>
-    </div>
-  </footer>
-</div>
+    const navigationHTML = `
+        <nav class="navigation">
+            <ul>
+                ${component.navigation
+                    .map(
+                        (item) => `
+                    <li class="navigation__item">
+                        <a href="${item.url || "#"}">${item.label || "Lien"}</a>
+                    </li>
+                `
+                    )
+                    .join("")}
+            </ul>
+        </nav>
+    `;
+
+    const contentBlocksHTML = `
+        <main class="team-container">
+            ${component.contentBlocks
+                .map(
+                    (block) => `
+                <div class="team-card">
+                    <img src="${block.image || "#"}" alt="${block.title || "Image"}" class="team-photo">
+                    <h3>${block.title || "Titre"}</h3>
+                    <p>${block.description || "Description"}</p>
+                </div>
+            `
+                )
+                .join("")}
+        </main>
+    `;
+
+    const sponsorsHTML = `
+        <div class="financeurs-footer">
+            <h4>Financeurs</h4>
+            <div class="financeurs-list">
+                ${component.sponsors
+                    .map(
+                        (sponsor) => `
+                    <div class="financeur-item">
+                        <img src="${sponsor.logo || "#"}" alt="${sponsor.name || "Logo"}" class="financeur-logo">
+                    </div>
+                `
+                    )
+                    .join("")}
+            </div>
+        </div>
+    `;
+
+    const footerHTML = `
+        <footer class="footer">
+            <div class="site-info">
+                <p>&copy; ${new Date().getFullYear()} ${component.siteTitle || "Nom du site"}</p>
+            </div>
+            ${sponsorsHTML}
+        </footer>
+    `;
+
+    return `
+        <div class="common-component">
+            ${headerHTML}
+            ${navigationHTML}
+            ${contentBlocksHTML}
+            ${footerHTML}
+        </div>
+    `;
+}
+
+// Export du composant pour utilisation ailleurs
+export default generateCommonComponent;
