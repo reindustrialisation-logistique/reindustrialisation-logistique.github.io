@@ -38,7 +38,7 @@
       <h4 class="text-center">Financeurs du projet</h4>
       <div class="financeurs-list d-flex justify-content-center align-items-center flex-wrap mt-3">
         {% for financeur in site.data.financeurs %}
-          <a href="{{ financeurs.website }}" target="_blank" class="financeur-item mx-3" title="{{ financeur.name }}">
+          <a href="{{ financeur.website }}" target="_blank" class="financeur-item mx-3" title="{{ financeur.name }}">
             <img src="{{ financeur.logo }}" alt="Logo de {{ financeur.name }}" class="financeur-logo">
           </a>
         {% endfor %}
