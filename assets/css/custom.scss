@@ -1,4 +1,8 @@
-/* Style pour la section hero */
+/* =======================================
+   Styles globaux et sections principales
+========================================== */
+
+/* Section hero */
 .hero {
   text-align: center;
   background-color: var(--body-bg);
@@ -6,39 +10,44 @@
   margin-bottom: 2rem;
 }
 
-/* Style pour le conteneur principal */
+/* Conteneur principal de la page d'accueil */
 .homepage-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-/* Style pour la colonne gauche */
+/* Colonne gauche (articles récents) */
 .recent-articles {
   flex: 1;
   max-width: 50%;
 }
 
-/* Style pour la colonne droite */
+/* Colonne droite (résumé du projet) */
 .project-summary {
   flex: 3;
   max-width: 100%;
 }
 
-/* Ajustements pour les images */
 .project-summary img {
   margin-top: 1rem;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
 }
+
+/* =======================================
+   Header et navigation
+========================================== */
+
 .header {
-    text-align: center;
-    padding: 1rem 0;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .header__title {
-    margin-bottom: 1rem;
-	font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .navigation {
@@ -58,7 +67,10 @@
   font-weight: bold;
 }
 
-/* Section hero */
+/* =======================================
+   Section équipe
+========================================== */
+
 .team-hero {
   text-align: center;
   padding: 2rem;
@@ -67,25 +79,24 @@
   margin-bottom: 2rem;
 }
 
-/* Conteneur principal */
 .team-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 20px;
   justify-content: center;
-  align-items: flex-start; /* Alignement vertical des éléments */
+  align-items: flex-start;
 }
 
-/* Carte de membre */
+/* Carte des membres */
 .team-card {
   display: flex;
-  flex-direction: column; /* Empile les éléments verticalement */
-  align-items: center; /* Centre les éléments horizontalement */
+  flex-direction: column;
+  align-items: center;
   background: var(--card-bg);
   border-radius: var(--border-radius);
   padding: 1.5rem;
   text-align: center;
-  max-width: 250px; /* Ajustez si nécessaire */
+  max-width: 250px;
   box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
 }
@@ -94,16 +105,16 @@
   transform: translateY(-5px);
 }
 
-/* Photo */
+/* Photo des membres */
 .team-photo {
-  width: 200px; /* Taille uniforme pour les photos */
-  height: 200px; /* Correspond à vos dimensions */
-  object-fit: cover; /* Empêche les déformations */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-/* Informations */
+/* Informations des membres */
 .team-card h2 {
   font-size: 1.3rem;
   color: var(--primary-dark);
@@ -122,7 +133,7 @@
   margin-bottom: 1rem;
 }
 
-/* Réseaux sociaux */
+/* Réseaux sociaux des membres */
 .team-socials {
   margin-top: 1rem;
 }
@@ -137,6 +148,11 @@
 .team-socials .social-link:hover {
   text-decoration: underline;
 }
+
+/* =======================================
+   Section partenaires
+========================================== */
+
 .partners-hero {
   text-align: center;
   padding: 2rem;
@@ -183,10 +199,26 @@
 .partner-link:hover {
   text-decoration: underline;
 }
-.financeurs-footer {
+
+/* =======================================
+   Footer
+========================================== */
+
+.footer {
   text-align: center;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
+}
+
+.footer .site-info {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Section financeurs */
+.financeurs-footer {
+  margin-top: 2rem;
 }
 
 .financeurs-footer h4 {
@@ -217,7 +249,11 @@
   width: auto;
   display: block;
 }
-/* Styles pour la page de contact */
+
+/* =======================================
+   Page de contact
+========================================== */
+
 .contact-hero {
   text-align: center;
   padding: 2rem;
