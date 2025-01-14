@@ -1,7 +1,7 @@
 "use strict";
 
 // Importer le composant depuis commonComponent.js
-import generateCommonComponent from ".src/commonComponent.js";
+import generateCommonComponent from "./src/commonComponent.js";
 
 // Exemple d'utilisation : données fictives
 const componentData = {
