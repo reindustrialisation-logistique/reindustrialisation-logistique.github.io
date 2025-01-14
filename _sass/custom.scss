@@ -32,25 +32,39 @@
   text-decoration: underline;
 }
 
-/* Navigation */
-.navigation {
-  margin-top: 1rem;
-  text-align: center;
-}
-
+/* Navigation Menu - Mobile Fix */
 .navigation ul {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the items */
+  gap: 0.5rem; /* Adjust spacing between items */
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Remove bullets */
+}
+
+.navigation__item {
+  flex: 1 1 auto; /* Ensure items adjust dynamically */
+  max-width: calc(100% / 3); /* Limit each item's width for small screens */
+  text-align: center; /* Center align text */
 }
 
 .navigation__item a {
+  display: block;
+  padding: 0.5rem;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.navigation__item a:hover {
-  text-decoration: underline;
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 0.25rem; /* Adjust gap for tighter layouts */
+  }
+
+  .navigation__item {
+    max-width: 100%; /* Ensure full width if needed */
+  }
 }
 
 /* Contenu principal */
