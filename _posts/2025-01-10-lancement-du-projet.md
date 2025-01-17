@@ -1,5 +1,6 @@
 ---
 title: Lancement du projet !
+date: 2025-01-15 
 tags: TeXt
 ---
 
