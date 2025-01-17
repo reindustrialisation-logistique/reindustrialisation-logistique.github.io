@@ -70,7 +70,7 @@ repository_tree: "main"
 paths:
   root    : # title link url, "/" (default)
   home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
+  archive : "/archive.html"# "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
 
