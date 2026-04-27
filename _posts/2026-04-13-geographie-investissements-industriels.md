@@ -1,6 +1,6 @@
 ---
-layout: article
 title: "Géographie des investissements industriels"
+layout: article
 date: 2026-04-13
 author: Nathan Gouin
 tags: [investissements industriels, réindustrialisation, industrie, territoires, base de données]
